@@ -10,6 +10,8 @@
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.min.css" rel="stylesheet">
 
@@ -17,7 +19,7 @@
   </head>
   <body>
 
-    <header class="header" role="banner">
+    <header class="header container" role="banner">
       <div class="logo">
           <!--
         <a href="/">
@@ -34,12 +36,12 @@
       </nav>
     </header>
 
-    <main class="main" role="main">
+    <main class="main container" role="main">
         <h1>Advanced Javascript <small>Course Notes</small></h1>
 
         <hr>
         <!-- Question Block -->
-        <h4>Explain "use strict";</h4>
+        <h4 class="question-headline clearfix">Explain "use strict"; <i class="fa fa-chevron-down"></i></h4>
 
         <!-- Answer Block -->
         <ul>
@@ -47,40 +49,111 @@
         </ul>
 
         <!-- Question Block -->
-        <h4>What are the different types in in javascript?</h4>
+        <h4 class="question-headline clearfix">What are the different types in in javascript? <i class="fa fa-chevron-down"></i></h4>
 
         <!-- Answer Block -->
         <ul class="answer-block">
-            <li><p><b>Boolean </b><i>true or false</i></p></li>
-            <li><p><strong>Number</strong> <i>1,1.0</i></p></li>
-            <li><p><strong>String</strong> <i>'a', "a"</i></p></li>
-            <li><p><strong>Null</strong> <i>null</i></p></li>
-            <li><p><strong>Undefined</strong> <i>undefined</i></p></li>
-            <li><p><strong>Object</strong> <i>{}, new Object()</i></p></li>
+            <li>
+                <p>
+                    <code>Boolean </code>
+                    <small>true or false</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>Number</code>
+                    <small>1,1.0</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>String</code>
+                    <small>'a', "a"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>Null</code>
+                    <small>null</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>Undefined</code>
+                    <small>undefined</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>Object</code>
+                    <small>{}, new Object()</small>
+                </p>
+            </li>
         </ul>
-
+        <br>
 
         <!-- Question Block -->
-        <h4>What does the function typeof() do?</h4>
+        <h4 class="question-headline clearfix">What does the function typeof() do? <i class="fa fa-chevron-down"></i></h4>
 
         <!-- Answer Block -->
         <ul class="answer-block">
-            <li><p>The function typeof() can be used to determine what type a value is.</p></li>
-            <li><p>typeof(1) // the value is "number"</p></li>
-            <li><p>typeof('a') // the value is "string"</p></li>
-            <li><p>typeof(true) // the value is "boolean"</p></li>
-            <li><p>typeof(undefined) // the value is "undefined"</p></li>
-            <li><p>typeof(null) // the value is "object"</p></li>
-            <li><p>typeof({}) // the value is "object"</p></li>
+            <li><p>The function <code>typeof()</code> can be used to determine what type a value is.</p></li>
+            <li>
+                <p>
+                    <code>typeof(1)</code>
+                    <small>the value is "number"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>typeof('a')</code>
+                    <small>the value is "string"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>typeof(true)</code>
+                    <small>the value is "boolean"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>typeof(undefined)</code>
+                    <small>the value is "undefined"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>typeof(null)</code>
+                    <small>the value is "object"</small>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <code>typeof({})</code>
+                    <small>the value is "object"</small>
+                </p>
+            </li>
         </ul>
+        <br>
 
         <!-- Question Block -->
-        <h4>what is it mean that javascript is a dynamically typed language?</h4>
+        <h4 class="question-headline clearfix">What does it mean that javascript is a dynamically typed language? <i class="fa fa-chevron-down"></i></h4>
 
         <!-- Answer Block -->
         <ul class="answer-block">
             <li><p>Javascript variables are determined dynamically at runtime as opposed to languages like java, which expects the variables to be defined ahead of time. </p></li>
         </ul>
+        <br>
+
+        <!-- Question Block -->
+        <h4 class="question-headline clearfix">What is the difference between "udnefined" and "null"? <i class="fa fa-chevron-down"></i></h4>
+
+        <!-- Answer Block -->
+        <ul class="answer-block">
+            <li><p>When a variable is <code>undefined</code> it has not yet been defined and is set to undefined by the javascript engine, whereas a variable can be assigned to <code>null</code> by the programmer to be manually set undefined. </p></li>
+        </ul>
+        <br>
 
 
     </main>
@@ -89,8 +162,12 @@
 
     </aside>
 
-    <footer class="footer" role="contentinfo">
-
+    <footer class="footer container" role="contentinfo">
+        <div class="footer-nav navbar navbar-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>

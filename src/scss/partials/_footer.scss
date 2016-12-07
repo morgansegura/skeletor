@@ -1,3 +1,11 @@
 .footer {
-
+  width: 100%;
+  background: #eee;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 1px solid #efefef;
+  .footer-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
